@@ -5,29 +5,29 @@
 <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </HEAD>
 <body>
-  <div class="aaa">
+  <div class="header">
     <img src="./eisenhower-matrix.jpg">
     <a 
-      class="more_inf"
+      class="header__link"
       href="https://goal-life.com/page/method/matrix-eisenhower"
     >
       Want more details?
     </a>
   </div>
-  <div class="centered-main-page-element">
-    <p id='topSectionForAddingElementToList'>
-      <label for="new-task">Add Item</label>
+  <div class="main-wrapper">
+    <p class="add-task__section">
+      <label class="add-task__label" for="add-task">Add Item</label>
       <div class="task-row-wrapper">
         <input 
-            id="new-task"
-            class="task"
+            id="add-task"
+            class="add-task__input"
             type="text"
         >
-        <button>Add</button>
+        <button class="add-task__btn">Add</button>
       </div>
     </p>
-    <h3>Todo</h3>
-    <ul id="incompleteTasks">
+    <h3 class="title">Todo</h3>
+    <ul class="todo-list" id="incompletedTasks">
       <li>
         <input type="checkbox">
         <label class="task">Pay Bills</label>
@@ -35,8 +35,8 @@
             type="text"
             class="task"
         >
-        <button class="edit">Edit</button>
-        <button class="delete">
+        <button class="btn_edit">Edit</button>
+        <button class="btn_delete">
         <img src="./remove.svg"></button>
       </li>
       <li class="editMode">
@@ -47,11 +47,11 @@
             value="Go Shopping"
             class="task"
         >
-        <button class="edit">Save</button>
-        <button class="delete"><img src="./remove.svg"></button>
+        <button class="btn_edit">Save</button>
+        <button class="btn_delete"><img src="./remove.svg"></button>
       </li>
     </ul>
-    <h3>Completed</h3>
+    <h3 class="title">Completed</h3>
     <ul id="completed-tasks">
       <li>
         <input type="checkbox" checked>
@@ -60,8 +60,8 @@
             type="text"
             class="task"
         >
-        <button class="edit">Edit</button>
-        <button class="delete"><img src="./remove.svg"></button>
+        <button class="btn_edit">Edit</button>
+        <button class="btn_delete"><img src="./remove.svg"></button>
       </li>
     </ul>
   </div>
