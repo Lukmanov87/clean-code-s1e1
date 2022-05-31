@@ -17,7 +17,7 @@
   <main class="main-wrapper">    
     <section class="add-task__section">
       <label class="add-task__label" for="add-task">Add Item</label>
-      <div class="task-row-wrapper">
+      <div class="add__task__row-wrapper">
         <input 
             id="add-task"
             class="add-task__input"
@@ -26,10 +26,10 @@
         <button class="add-task__btn">Add</button>
       </div>
     </section>
-    <section>
+    <section class="todo">
       <h3 class="title">Todo</h3>
-      <ul class="todo-list" id="incompletedTasks">
-        <li>
+      <ul class="todo__list" id="incompletedTasks">
+        <li class="todo__list-elem">
           <input type="checkbox">
           <label class="task">Pay Bills</label>
           <input 
@@ -56,10 +56,10 @@
         </li>
       </ul>
     </section>    
-    <section>
+    <section class="completed">
       <h3 class="title">Completed</h3>
-      <ul id="completed-tasks">
-        <li>
+      <ul class="completed__list" id="completed-tasks">
+        <li class="completed__list-elem">
           <input type="checkbox" checked>
           <label class="task">See the Doctor</label>
           <input 
